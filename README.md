@@ -11,13 +11,13 @@ Primeiramente instale o docker tanto na maquina que funcionará como cliente tan
 sudo apt install docker.io
 ```
 
-Na maquina de sua escolha, faça download da aplicação cliente. Para que seja enviado o arquivo Execute os comandos para construir e executar o docker responsavel pelo cliente.
+Na maquina de sua escolha, faça download da aplicação cliente. Para que seja enviado o arquivo Execute o comando a seguir para construir e executar o docker responsavel pelo cliente.
 
 ```
 sudo docker run --rm -it --network=host zezouain/server:v1 /bin/bash
 ```
 
-Na maquina de sua escolha, faça o dowload da aplicação cliente. Para receber o arquivo Execute os comandos para construir e executar o docker responsavel pelo servidor.
+Na maquina de sua escolha, faça o dowload da aplicação cliente. Para receber o arquivo Execute o comando a seguir para construir e executar o docker responsavel pelo servidor.
 
 ```
 sudo docker run --rm -it --network=host zezouain/client:v1 /bin/bash
@@ -37,7 +37,7 @@ Client:
 python3 cliente-http.py
 ```
 
-Com todas as aplicações rodando em suas respectivas máquinas, agora, é necessário informar o endereço de IP do servidor no algoritmo do client. Após isso é preciso somente informar o nome do arquivo que será enviado para o servidor, onde neste caso será:
+Com todas as aplicações rodando em suas respectivas máquinas, agora, é necessário informar no algoritmo do client o endereço de IP da maquina onde se localiza o servidor. Após isso é preciso somente informar o nome do arquivo que será enviado para o servidor, onde neste caso será:
 
 ```
 BRIGA.mp4
